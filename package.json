@@ -37,7 +37,7 @@
     "gulp-strip-debug": "^1.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-uglifycss": "^1.0.9",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.1",
     "jquery-bridget": "^2.0.1",
     "justifiedGallery": "^3.7.0",
     "magnific-popup": "^1.1.0",
