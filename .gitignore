@@ -1,0 +1,67 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+!web/app/plugins/all-in-one-seo-pack-custom
+web/app/aiowps_backups/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/wp/wp-content/plugins/hello.php
+composer.phar
+
+# WordPress
+web/wp
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+
+# Wordfence
+web/app/wflogs
+web/.user.ini
+
+# FrontEnd
+/node_modules
+composer.lock
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+**.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+**/.sass-cache
+**/.sass-cache/*
+**/.map
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+*.map

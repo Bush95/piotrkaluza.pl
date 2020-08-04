@@ -1,0 +1,80 @@
+{
+    "key": "group_5e1f9e970c29b",
+    "title": "Wedding",
+    "fields": [
+        {
+            "key": "field_5e1fa9dce4122",
+            "label": "Text section 1",
+            "name": "text_section_1",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5e1f9ed62a742",
+            "label": "Gallery",
+            "name": "gallery",
+            "type": "photo_gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "fields[gallery": {
+                "edit_modal": "Default"
+            },
+            "edit_modal": "Default"
+        },
+        {
+            "key": "field_5e1fa9ede4124",
+            "label": "Text section 2",
+            "name": "text_section_2",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/wedding.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1579341701
+}

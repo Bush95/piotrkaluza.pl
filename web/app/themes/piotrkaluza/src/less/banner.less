@@ -1,0 +1,93 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    min-height: 200px;
+    overflow: hidden;
+    background-color: #333;
+
+    @media @lg {
+        height: auto;
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 20%;
+        }
+    }
+
+    img {
+        position: absolute;
+        left: 0 !important;
+        min-width: 100%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: opacity 400ms, filter 500ms;
+
+        @media @lg {
+            opacity: 0;
+            top: 0;
+            transform: none;
+        }
+    }
+
+    &.loaded img {
+
+        @media @lg {
+            opacity: 1;
+        }
+    }
+
+    &__content-container {
+        position: absolute;
+        bottom: 36%;
+        z-index: 2;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        text-align: center;
+    }
+
+    i {
+        font-size: 7rem;
+        color: #FFFFFF;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        color: #FFFFFF;
+        font-size: 4.2rem;
+        line-height: 4.8rem;
+        display: block;
+        font-weight: 300;
+
+        > i {
+            font-size: 4rem;
+            margin-right: 10px;
+        }
+
+        @media @lg {
+            margin-bottom: 30px;
+            font-size: 5.6rem;
+            line-height: 6.6rem;
+        }
+    }
+
+}
+
+.banner.banner-small {
+}
+
+.banner.banner--placeholder {
+    display: none;
+
+    @media @lg {
+        min-height: 1px;
+        display: block;
+        height: 60px;
+    }
+}

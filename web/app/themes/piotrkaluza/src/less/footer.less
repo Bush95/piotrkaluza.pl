@@ -1,0 +1,87 @@
+body.home {
+	position: relative; // fix mobile bar scroll
+}
+
+.page-footer {
+    padding: 26px 0 17px;
+	text-align: center;
+	text-transform: uppercase;
+
+	.home & {
+    	padding: 15px 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: transparent;
+		margin: 0;
+	}
+
+
+    .menu {
+		.resetlist();
+		line-height: 1.1rem;
+		margin: 5px 0 0 6px;
+
+		@media @md {
+			border-left: solid 1px #333333;
+			margin-top: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 6px;
+		}
+		a {
+			font-size: 1.1rem;
+			color: #333333;
+			transition: color 120ms;
+			text-decoration-color: fade(#333333, 20%);
+
+			@media @md {
+				font-size: 1.1rem;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			&:hover {
+				color: #A9A9A9;
+			}
+		}
+    }
+
+    .social {
+    	a {
+    		color: #333;
+    	}
+    }
+
+    &__wrapper {
+    	display: flex;
+    	align-items: center;
+    	text-align: center;
+    	justify-content: center;
+    	flex-direction: column;
+
+    	@media @md {
+    		flex-direction: row;
+    	}
+    }
+
+    .copy {
+    	font-size: 1.1rem;
+		color: #333333;
+    }
+
+
+    .home & {
+    	.copy,
+    	.social a,
+    	.menu a {
+    		color: #FFFFFF;
+    	}
+    	.menu {
+    		border-left-color: #FFFFFF;
+    	}
+    }
+}
